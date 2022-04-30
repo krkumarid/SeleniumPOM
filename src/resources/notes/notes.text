@@ -1,0 +1,30 @@
+POM : Design Pattern( Martin Folwer )
+
+DD  : Data Driven Approach
+
+Libs : Generic functions
+
+TDD( test driven development )
+
+===>Hybrid framework + POM( Single resposibilty Principle) 
+POM?
+Page :
+	-for every page in web/mobile app,we need to create separate page java class.
+	- never use assertion in page class
+	- page actions need to provide the page behaviour
+	- page locators( By) should be private( encapsualtion)  and will be accessed via public actions. 
+Test :
+	- have to use a test client : TestNg/JUnit
+	-assertions should be written in test class
+	- never use driver apis( webdriver) in test class
+
+KD : keyword driven framework
+1.open browser
+2.Enter url
+3.enter usename 
+4.enter password
+5.click on login
+
+KD + DD => Hybrid
+
+
