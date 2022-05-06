@@ -5,7 +5,8 @@ public class DemImp
 
      public void order()
     {
-        String name = "Rajeevkumar";
+        String name = "Sreesha Rajeevkumar";
+        int total = 100;
     }
 
 }
