@@ -144,7 +144,7 @@ public class ElementUtil
         for (WebElement e : elmAttr)
         {
             String str = e.getAttribute(type);
-            if (!str.isEmpty)
+            if (!str.isEmpty())
             {
                 strText.add(str);
             }
