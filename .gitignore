@@ -14,7 +14,7 @@ application.log
 *.war
 *.ear
 *.nar
-
+*.ini
 hs_err_pid*
 activityLog.log
 ##############################
