@@ -13,15 +13,15 @@ public class SearchResultsPage
 {
     private WebDriver driver;
     private ElementUtil eleUtil;
-    
+
     private By productResult = By.cssSelector("div.caption a");
-    
+
     public SearchResultsPage(WebDriver driver)
     {
-        // this.driver = driver;
+        this.driver = driver;
         eleUtil = new ElementUtil(driver);
     }
-    
+
     public int getProductListCount()
     {
         int resCount = eleUtil.waitForElementsToBeVisible(productResult, ConstantValues.DEFAULT_TIME_OUT,
@@ -29,11 +29,11 @@ public class SearchResultsPage
         System.out.println("The product result count :" + resCount);
         return resCount;
     }
-    
+
     public ProductInfoPage selectProduct(String mainProductName)
     {
         System.out.println("Main prouct name is :" + mainProductName);
-        
+
         List<WebElement> searchList = eleUtil.waitForElementsToBeVisible(productResult, ConstantValues.DEFAULT_TIME_OUT,
                 ConstantValues.DEFAULT_POLLING_TIME);
         for (WebElement e : searchList)

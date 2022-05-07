@@ -25,7 +25,7 @@ public class DriverFactory
     public static String highlight;
     public OptionsManager optionsManager;
     public static ThreadLocal<WebDriver> tlDriver = new ThreadLocal<WebDriver>();
-
+    
     /**
      * This method is used to initialize the driver
      *
@@ -72,13 +72,12 @@ public class DriverFactory
             openUrl(url);
         } catch (MalformedURLException e)
         {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         }
-        
+
         return getDriver();
     }
-
+    
     /**
      * getDriver() :- it will return the thread local copy of the webdriver
      * syschronized driver
@@ -87,7 +86,7 @@ public class DriverFactory
     {
         return tlDriver.get();
     }
-
+    
     /**
      * This method is used to initialize the properies from the config file
      *
@@ -143,10 +142,10 @@ public class DriverFactory
         {
             e.printStackTrace();
         }
-
+        
         return prop;
     }
-    
+
     /**
      * Take the screen shot
      *
@@ -167,7 +166,7 @@ public class DriverFactory
         }
         return path;
     }
-    
+
     /**
      * launch url method
      *
@@ -185,10 +184,10 @@ public class DriverFactory
         {
             e.printStackTrace();
         }
-        
+
         getDriver().get(url);
     }
-
+    
     public void openUrl(URL url)
     {
         try
@@ -201,10 +200,10 @@ public class DriverFactory
         {
             e.printStackTrace();
         }
-        
+
         getDriver().navigate().to(url);
     }
-
+    
     public void openUrl(String baseUrl, String path)
     {
         try
@@ -220,7 +219,7 @@ public class DriverFactory
         // http://amazon.com/accpage/users.html
         getDriver().get(baseUrl + "/" + path);
     }
-
+    
     public void openUrl(String baseUrl, String path, String queryParam)
     {
         try
