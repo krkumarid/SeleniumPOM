@@ -8,7 +8,7 @@ public class POC
         int i = 10;
         int b = 20;
         int sum = i + b;
-      String name = "POC"
+      String name = "POC";
         String ID="1806";
     }
 
