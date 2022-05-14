@@ -7,12 +7,44 @@
         <listener class-name="com.qa.opencart.listeners.TestAllureListener"></listener>
         <listener class-name="com.qa.opencart.listeners.AnnotationTransformer"></listener>
     </listeners>
-    <test name="Open Cart Login Page Test">
+    <test name="Open Cart Login Page Test -ch-89">
+        <parameter name="browser" value="chrome"></parameter>
+        <parameter name="browserversion" value="89"></parameter>
         <classes>
             <class name="com.qa.opencart.tests.LoginPageTest" />
         </classes>
     </test>
-    <test name="Open Cart Account Page Test">
+    <test name="Open Cart Login Page Test -ch-90">
+        <parameter name="browser" value="chrome"></parameter>
+        <parameter name="browserversion" value="90"></parameter>
+        <classes>
+            <class name="com.qa.opencart.tests.LoginPageTest" />
+        </classes>
+    </test>
+    <test name="Open Cart Login Page Test -ff-57">
+        <parameter name="browser" value="firefox"></parameter>
+        <parameter name="browserversion" value="57"></parameter>
+        <classes>
+            <class name="com.qa.opencart.tests.LoginPageTest" />
+        </classes>
+    </test>
+    <test name="Open Cart Login Page Test -ff-83">
+        <parameter name="browser" value="firefox"></parameter>
+        <parameter name="browserversion" value="83"></parameter>
+        <classes>
+            <class name="com.qa.opencart.tests.LoginPageTest" />
+        </classes>
+    </test>
+    <test name="Open Cart Account Page Test -90">
+        <parameter name="browser" value="chrome"></parameter>
+        <parameter name="browserversion" value="90"></parameter>
+        <classes>
+            <class name="com.qa.opencart.tests.AccountPageTest" />
+        </classes>
+    </test>
+    <test name="Open Cart Account Page Test ff-83">
+        <parameter name="browser" value="firefox"></parameter>
+        <parameter name="browserversion" value="83"></parameter>
         <classes>
             <class name="com.qa.opencart.tests.AccountPageTest" />
         </classes>
