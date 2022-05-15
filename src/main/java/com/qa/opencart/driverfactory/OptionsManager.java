@@ -19,6 +19,8 @@ public class OptionsManager
     public ChromeOptions getChromeOptions()
     {
         co = new ChromeOptions();
+        co.addArguments("--disable-dev-shm-usage");
+        co.addArguments("--no-sandbox");
         if (Boolean.parseBoolean(prop.getProperty("headless")))
         {
             co.addArguments("--headless");
@@ -33,6 +35,8 @@ public class OptionsManager
     public FirefoxOptions getFireFoxOptions()
     {
         fo = new FirefoxOptions();
+        fo.addArguments("--disable-dev-shm-usage");
+        fo.addArguments("--no-sandbox");
         if (Boolean.parseBoolean(prop.getProperty("headless")))
         {
             co.addArguments("--headless");
